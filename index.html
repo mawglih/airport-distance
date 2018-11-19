@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--CSS-->
+    <link href="styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Distance calculator</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <form id="form1">
+            <legend>Airports</legend>
+            <div class="form-group">
+                <label for="inpu1">Airport 1</label>
+                <input
+                  name="input1"
+                  placeholder="type 3 digit airport code"
+                  id="input1"
+                />
+            </div>
+            <div class="form-group">
+                <label for="inpu2">Airport 2</label>
+                <input
+                  name="input2"
+                  placeholder="type 3 digit airport code"
+                  id="input2"
+                />
+            </div>
+            <button class="btn btn-success" id="btn1">Submit</button>
+          </form>
+        </div>
+        <div class="col-sm-1 col-md-6">
+          <h3 class="pull-right">Output</h3>
+        </div>
+      </div>
+    </div>
+  
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='./script.js'></script>
+  </body>
+</html>
