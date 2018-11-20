@@ -49,7 +49,7 @@ $(document).ready(function(){
     $("#input1").val("");
     $("#input2").val("");
     if( response === -1) {
-      msg = "Please enter correct airport code";
+      msg = "Please enter correct airport code! Use JFK, LAX, LAS, PDX only!";
     } else if ( response === 0) {
       msg = "You entered same airport code twice";
     } else {
