@@ -42,11 +42,21 @@ IntentMedia.Distances = (function () {
 $(document).ready(function(){
   $("#form1").submit(function(event){
     event.preventDefault();
-    var input1 = $("#input1").val();
-    var input2 = $("input2").val();
+    var input1 = $("#input1").val().toUpperCase();
+    var input2 = $("#input2").val().toUpperCase();
+    var msg = "";
+    var response = IntentMedia.Distances.distance_between_airports(input1, input2);
+    $("#input1").val("");
+    $("#input2").val("");
+    if( response === -1) {
+      msg = "Please enter correct airport code";
+    } else if ( response === 0) {
+      msg = "You entered same airport code twice";
+    } else {
+      msg = "Distance between " + input1 + " and " + input2 + " is " + response + " miles ";
+    }
+    output1.innerText = msg;
   });
 });
 
-$("#btn1").click(function(){
-  alert(input1 + " " + input2 + " was entered");
-});
+
